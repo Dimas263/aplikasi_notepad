@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:aplikasi_notepad/res/custom_colors.dart';
 import 'package:aplikasi_notepad/widgets/app_bar_title.dart';
-import 'package:aplikasi_notepad/widgets/database/crud/db_item_list.dart';
+import 'package:aplikasi_notepad/widgets/item_list.dart';
+import 'package:flutter/material.dart';
 
-import 'db_add_screen.dart';
+import 'add_screen.dart';
 
 class DbDashboardScreen extends StatefulWidget {
   @override

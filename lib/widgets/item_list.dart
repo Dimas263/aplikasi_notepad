@@ -1,8 +1,8 @@
+import 'package:aplikasi_notepad/res/custom_colors.dart';
+import 'package:aplikasi_notepad/screens/edit_screen.dart';
+import 'package:aplikasi_notepad/utils/database.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:aplikasi_notepad/res/custom_colors.dart';
-import 'package:aplikasi_notepad/screens/database/crud/db_edit_screen.dart';
-import 'package:aplikasi_notepad/utils/database.dart';
 
 class DbItemList extends StatelessWidget {
   @override

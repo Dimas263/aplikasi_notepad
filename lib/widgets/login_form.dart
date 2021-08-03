@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:aplikasi_notepad/res/custom_colors.dart';
-import 'package:aplikasi_notepad/screens/database/crud/db_dashboard_screen.dart';
+import 'package:aplikasi_notepad/screens/dashboard_screen.dart';
 import 'package:aplikasi_notepad/utils/database.dart';
-import 'package:aplikasi_notepad/utils/db_validator.dart';
+import 'package:aplikasi_notepad/utils/validator.dart';
 
-import '../../custom_form_field.dart';
+import 'custom_form_field.dart';
 
 class DbLoginForm extends StatefulWidget {
   final FocusNode focusNode;

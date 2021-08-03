@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:aplikasi_notepad/res/custom_colors.dart';
-import 'package:aplikasi_notepad/widgets/database/crud/db_login_form.dart';
+import 'package:aplikasi_notepad/widgets/login_form.dart';
 
 class DbLoginScreen extends StatefulWidget {
   @override

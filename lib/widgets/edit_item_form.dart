@@ -1,35 +1,53 @@
-import 'package:flutter/material.dart';
 import 'package:aplikasi_notepad/res/custom_colors.dart';
 import 'package:aplikasi_notepad/utils/database.dart';
-import 'package:aplikasi_notepad/utils/db_validator.dart';
+import 'package:aplikasi_notepad/utils/validator.dart';
+import 'package:flutter/material.dart';
 
-import '../../custom_form_field.dart';
+import 'custom_form_field.dart';
 
-class DbAddItemForm extends StatefulWidget {
+class DbEditItemForm extends StatefulWidget {
   final FocusNode titleFocusNode;
   final FocusNode descriptionFocusNode;
+  final String currentTitle;
+  final String currentDescription;
+  final String documentId;
 
-  const DbAddItemForm({
+  const DbEditItemForm({
     required this.titleFocusNode,
     required this.descriptionFocusNode,
+    required this.currentTitle,
+    required this.currentDescription,
+    required this.documentId,
   });
 
   @override
-  _DbAddItemFormState createState() => _DbAddItemFormState();
+  _DbEditItemFormState createState() => _DbEditItemFormState();
 }
 
-class _DbAddItemFormState extends State<DbAddItemForm> {
-  final _addItemFormKey = GlobalKey<FormState>();
+class _DbEditItemFormState extends State<DbEditItemForm> {
+  final _editItemFormKey = GlobalKey<FormState>();
 
   bool _isProcessing = false;
 
-  final TextEditingController _titleController = TextEditingController();
-  final TextEditingController _descriptionController = TextEditingController();
+  late TextEditingController _titleController;
+  late TextEditingController _descriptionController;
+
+  @override
+  void initState() {
+    _titleController = TextEditingController(
+      text: widget.currentTitle,
+    );
+
+    _descriptionController = TextEditingController(
+      text: widget.currentDescription,
+    );
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Form(
-      key: _addItemFormKey,
+      key: _editItemFormKey,
       child: Column(
         children: [
           Padding(
@@ -117,12 +135,13 @@ class _DbAddItemFormState extends State<DbAddItemForm> {
                       widget.titleFocusNode.unfocus();
                       widget.descriptionFocusNode.unfocus();
 
-                      if (_addItemFormKey.currentState!.validate()) {
+                      if (_editItemFormKey.currentState!.validate()) {
                         setState(() {
                           _isProcessing = true;
                         });
 
-                        await Database.addItem(
+                        await Database.updateItem(
+                          docId: widget.documentId,
                           title: _titleController.text,
                           description: _descriptionController.text,
                         );
@@ -137,7 +156,7 @@ class _DbAddItemFormState extends State<DbAddItemForm> {
                     child: Padding(
                       padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
                       child: Text(
-                        'ADD ITEM',
+                        'UPDATE ITEM',
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,

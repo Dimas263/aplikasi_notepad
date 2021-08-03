@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-
 import 'package:aplikasi_notepad/res/custom_colors.dart';
+import 'package:flutter/material.dart';
 
 class AppBarTitle extends StatelessWidget {
   final String sectionName;

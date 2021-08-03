@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:aplikasi_notepad/res/custom_colors.dart';
 import 'package:aplikasi_notepad/utils/database.dart';
 import 'package:aplikasi_notepad/widgets/app_bar_title.dart';
-import 'package:aplikasi_notepad/widgets/database/crud/db_edit_item_form.dart';
+import 'package:aplikasi_notepad/widgets/edit_item_form.dart';
+import 'package:flutter/material.dart';
 
 class DbEditScreen extends StatefulWidget {
   final String currentTitle;

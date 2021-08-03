@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:aplikasi_notepad/res/custom_colors.dart';
+import 'package:flutter/material.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);
