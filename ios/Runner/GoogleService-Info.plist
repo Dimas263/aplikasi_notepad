@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>408005257875-11gkqe5qvhanb2he3v3pe8ev5iu1irdu.apps.googleusercontent.com</string>
+	<string>408005257875-b46ru5ph8mvk161mi0i10l5506ftein5.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.408005257875-11gkqe5qvhanb2he3v3pe8ev5iu1irdu</string>
+	<string>com.googleusercontent.apps.408005257875-b46ru5ph8mvk161mi0i10l5506ftein5</string>
 	<key>ANDROID_CLIENT_ID</key>
 	<string>408005257875-emvpu4ns50dn76o7nrrndmofc627k8o7.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
@@ -15,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.dimas263.aplikasinotepad.aplikasiNotepad</string>
+	<string>com.app.memo.Memo</string>
 	<key>PROJECT_ID</key>
 	<string>memo-ca188</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:408005257875:ios:496050fee859956977bb66</string>
+	<string>1:408005257875:ios:1ecd72b6e5dd0fc877bb66</string>
 </dict>
 </plist>

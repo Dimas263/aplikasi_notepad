@@ -53,35 +53,7 @@ class _DbLoginScreenState extends State<DbLoginScreen> {
                               fontSize: 40,
                             ),
                           ),
-                          SizedBox(height: 30),
-                          Text(
-                            'Support by',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 15,
-                            ),
-                          ),
-                          SizedBox(height: 5),
-                          Flexible(
-                            flex: 1,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  'assets/gunadarma.png',
-                                  height: 40,
-                                ),
-                                Image.asset(
-                                  'assets/citiasia_logo.png',
-                                  height: 40,
-                                ),
-                                Image.asset(
-                                  'assets/mbkm.png',
-                                  height: 40,
-                                ),
-                              ],
-                            ),
-                          ),
+
                           SizedBox(height: 60),
                           Text(
                             'Develop by',
@@ -92,7 +64,7 @@ class _DbLoginScreenState extends State<DbLoginScreen> {
                           ),
                           SizedBox(height: 5),
                           Text(
-                            'Mia Asdhar',
+                            'Dimas Dwi Putra',
                             style: TextStyle(
                               color: Palette.firebaseOrange,
                               fontSize: 16,

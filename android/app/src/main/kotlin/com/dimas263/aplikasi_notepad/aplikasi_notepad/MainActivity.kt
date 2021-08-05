@@ -1,4 +1,4 @@
-package com.dimas263.aplikasi_notepad.aplikasi_notepad
+package com.app.memo
 
 import io.flutter.embedding.android.FlutterActivity
 

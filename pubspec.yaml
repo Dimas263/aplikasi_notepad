@@ -62,11 +62,7 @@ flutter:
   assets:
     - assets/
     - assets/memo_logo.png
-    - assets/mbkm.png
     - assets/firebase_logo.png
-    - assets/citiasia_logo.png
-    - assets/gunadarma.png
-    -
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
