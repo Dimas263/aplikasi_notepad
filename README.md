@@ -14,4 +14,5 @@ Aplikasi untuk membuat catatan sehari-hari
 <img src="assets/4.jpg" alt="alt text" width="150"/>
 <img src="assets/5.jpg" alt="alt text" width="150"/>
 
-
+## Download Aplikasi
+[Download Aplikasi Notepad](https://github.com/Dimas263/aplikasi_notepad/blob/master/aplikasi_notepad.apk)
