@@ -120,19 +120,6 @@ class _DbLoginScreenState extends State<DbLoginScreen> {
                   ],
                 ),
               ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 8.0, left: 8.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black26,
-                      borderRadius: BorderRadius.circular(30.0),
-                    ),
-                    child: BackButton(),
-                  ),
-                ),
-              )
             ],
           ),
         ),

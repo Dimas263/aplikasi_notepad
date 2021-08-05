@@ -70,11 +70,9 @@ class _DbLoginFormState extends State<DbLoginForm> {
 
                   if (_loginInFormKey.currentState!.validate()) {
                     Database.userUid = _uidController.text;
-
-                    Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                        builder: (context) => DbDashboardScreen(),
-                      ),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => DbDashboardScreen()),
                     );
                   }
                 },

@@ -1,4 +1,5 @@
 import 'package:aplikasi_notepad/res/custom_colors.dart';
+import 'package:aplikasi_notepad/screens/login_screen.dart';
 import 'package:aplikasi_notepad/widgets/app_bar_title.dart';
 import 'package:aplikasi_notepad/widgets/item_list.dart';
 import 'package:flutter/material.dart';
@@ -42,14 +43,33 @@ class _DbDashboardScreenState extends State<DbDashboardScreen> {
         ),
       ),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.only(
-            left: 16.0,
-            right: 16.0,
-            bottom: 20.0,
-          ),
-          child: DbItemList(),
-        ),
+        child: Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 16.0,
+                right: 16.0,
+                bottom: 20.0,
+              ),
+              child: DbItemList(),
+            ),
+            /*
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 25.0, left: 15.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.black26,
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  child: BackButton(),
+                ),
+              ),
+            )
+            */
+          ],
+        )
       ),
     );
   }
