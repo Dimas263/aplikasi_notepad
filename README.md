@@ -1,4 +1,4 @@
-# Aplikasi Notepad
+# <img src="https://img.icons8.com/external-smashingstocks-thin-outline-color-smashing-stocks/67/undefined/external-memo-party-and-celebrations-smashingstocks-thin-outline-color-smashing-stocks.png"/> Aplikasi Notepad
 
 Aplikasi untuk membuat catatan sehari-hari
 
